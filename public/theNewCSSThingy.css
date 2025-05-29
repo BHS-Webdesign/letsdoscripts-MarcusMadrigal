@@ -2,38 +2,42 @@ html{
     background-color: black
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 620px 600px;
+    grid-template-rows: 520px 520px;
+    gap: 20px;
+    position: absolute;
+}
+
 .frame{
     background-color: lightblue;
     border: 10px ridge white;
     box-shadow: 0px 0px 50px white;
-    height: 600px;
-    width: 540px;
-    position: absolute;
-    z-index: -5;
+    /*z-index: -5;*/
 }
 
 .C{
-    top: 20px;
-    left: 20px;
+    grid-column-start: 1;
+    grid-row-start: 1;
     color: lightblue;
-    
 }
 
 .H{
-    top: 20px;
-    left: 600px;
+    grid-column-start: 2;
+    grid-row-start: 1;
     color: lightblue;
 }
 
 .T{
-    top: 660px;
-    left: 20px;
+    grid-column-start: 1;
+    grid-row-start: 2;
     color: lightblue;
 }
 
 .E{
-    top: 660px;
-    left: 600px;
+    grid-column-start: 2;
+    grid-row-start: 2;
     background: url(/public/img/scaredHuman.jpg) no-repeat;
     background-position: 50%;
     background-size: 150%;
@@ -45,24 +49,30 @@ html{
 }
 
 .Computer1{
+    grid-column-start: 1;
+    grid-row-start: 1;
     background: url(/public/img/computerF1.png) no-repeat;
     height: 472.5px;
     width: 420px;
     background-size: 100%;
-    left: 90px;
-    top: 95px;
-    position: absolute;
+    left: 100px;
+    top: 35px;
+    position: relative;
+    z-index: 100;
     color: lightblue;
     line-height: 550px;
 }
 
 .Run_for_your_life{
+    grid-column-start: 1;
+    grid-row-start: 1;
     left: 90px;
     top: 95px;
-    position: absolute;
-    line-height: 210px;
-    text-indent: 65px;
+    position: relative;
+    line-height: 100px;
+    text-indent: 75px;
     font-size: 20px;
+    z-index: 101;
     animation-name: wiggle;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
@@ -77,24 +87,28 @@ html{
 }
 
 .Human{
+    grid-column-start: 2;
+    grid-row-start: 1;
     background: url(/public/img/scaredHuman.jpg) no-repeat;
     border: 5px ridge rgb(171, 171, 255);
     height: 472.5px;
     width: 420px;
     background-size: 150%;
     background-position: 50%;
-    left: 660px;
-    top: 60px;
-    position: absolute;
+    left: 85px;
+    top: 10px;
+    position: relative;
     color: lightblue;
     line-height: 1030px;
 }
 
 .AAAAAAAAAAAAAAAAAAAHHHHHHHHH{
-    left: 660px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    left: 85px;
     top: 60px;
-    position: absolute;
-    line-height: 1030px;
+    position: relative;
+    line-height: 850px;
     text-indent: -32.5px;
     font-size: 24px;
     animation-name: wiggle;
@@ -103,12 +117,14 @@ html{
 }
 
 .Computer2{
+    grid-column-start: 1;
+    grid-row-start: 2;
     background: url(/public/img/computerF1.png) no-repeat;
     height: 472.5px;
     width: 420px;
     background-size: 100%;
-    left: 90px;
-    top: 730px;
+    left: 100px;
+    top: 35px;
     position: absolute;
     line-height: 550px;
     color: lightblue;
@@ -177,13 +193,15 @@ html{
 }
 
 .fire{
+    grid-column-start: 1;
+    grid-row-start: 2;
     background: url(/public/img/Fire.gif) no-repeat;
     height: 700px;
     width: 500px;
-    background-size: 20%;
+    background-size: 12%;
     z-index: 100;
-    left: 400px;
-    top: 678px;
-    position: absolute;
+    left: 440px;
+    top: 23px;
+    position: relative;
     color: lightblue;
 }

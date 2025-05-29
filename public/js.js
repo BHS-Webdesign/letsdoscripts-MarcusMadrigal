@@ -66,6 +66,7 @@ var dance = function(x, dunno) {
         i++
     ){
         var copycat = cat.cloneNode(true);
+        copycat.classList.add("grid");
 
         for(
             var f = 0;
