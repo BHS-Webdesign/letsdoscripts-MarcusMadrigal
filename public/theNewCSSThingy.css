@@ -5,9 +5,8 @@ html{
 .grid{
     display: grid;
     grid-template-columns: 620px 600px;
-    grid-template-rows: 520px 520px;
+    grid-template-rows: 520px 520px 520px;
     gap: 20px;
-    position: absolute;
 }
 
 .frame{
@@ -21,18 +20,21 @@ html{
     grid-column-start: 1;
     grid-row-start: 1;
     color: lightblue;
+    font-size: 0px;
 }
 
 .H{
     grid-column-start: 2;
     grid-row-start: 1;
     color: lightblue;
+    font-size: 0px;
 }
 
 .T{
     grid-column-start: 1;
     grid-row-start: 2;
     color: lightblue;
+    font-size: 0px;
 }
 
 .E{
@@ -42,6 +44,7 @@ html{
     background-position: 50%;
     background-size: 150%;
     color: rgb(182, 182, 182);
+    font-size: 0px;
 }
 
 .words{
@@ -60,7 +63,7 @@ html{
     position: relative;
     z-index: 100;
     color: lightblue;
-    line-height: 550px;
+    font-size: 0px;
 }
 
 .Run_for_your_life{
@@ -99,7 +102,7 @@ html{
     top: 10px;
     position: relative;
     color: lightblue;
-    line-height: 1030px;
+    font-size: 0px;
 }
 
 .AAAAAAAAAAAAAAAAAAAHHHHHHHHH{
@@ -125,16 +128,18 @@ html{
     background-size: 100%;
     left: 100px;
     top: 35px;
-    position: absolute;
+    position: relative;
     line-height: 550px;
     color: lightblue;
 }
 
 .HAHAHAHAHA{
-    left: 90px;
-    top: 730px;
-    position: absolute;
-    line-height: 135px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    left: 110px;
+    top: 110px;
+    position: relative;
+    line-height: 5px;
     text-indent: 50px;
     font-size: 24px;
     animation-name: wiggle;
@@ -143,9 +148,11 @@ html{
 }
 
 .HAHAHAHA{
-    left: 163px;
-    top: 805px;
-    position: absolute;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    left: 180px;
+    top: 120px;
+    position: relative;
     font-size: 24px;
     animation-name: wiggle;
     animation-duration: 0.001s;
@@ -153,9 +160,11 @@ html{
 }
 
 .HAHAHA{
-    left: 185px;
-    top: 825px;
-    position: absolute;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    left: 200px;
+    top: 140px;
+    position: relative;
     font-size: 24px;
     animation-name: wiggle;
     animation-duration: 0.001s;
@@ -163,9 +172,11 @@ html{
 }
 
 .HAHA{
-    left: 207px;
-    top: 845px;
-    position: absolute;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    left: 220px;
+    top: 160px;
+    position: relative;
     font-size: 24px;
     animation-name: wiggle;
     animation-duration: 0.001s;
@@ -173,22 +184,23 @@ html{
 }
 
 .Explosion{
+    grid-column-start: 2;
+    grid-row-start: 2;
     background: url(/public/img/realCoolExplosion.gif) no-repeat;
     height: 700px;
     width: 500px;
     background-size: 80%;
     background-position: 10%;
-    left: 700px;
-    top: 600px;
-    position: absolute;
-    line-height: 200px;
-    text-indent: 500px;
-    font-size: 24px;
+    left: 120px;
+    top: -58px;
+    position: relative;
+    font-size: 0px;
 }
 
 .NOOOOOOOOOOOOOOO{
-    text-indent: 200px;
-    line-height: 200px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 0px;
     color: lightblue;
 }
 
@@ -204,4 +216,5 @@ html{
     top: 23px;
     position: relative;
     color: lightblue;
+    font-size: 0px;
 }

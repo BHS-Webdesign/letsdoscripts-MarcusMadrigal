@@ -65,7 +65,6 @@ var dance = function(x, dunno) {
         i < dunno.length;
         i++
     ){
-        var copycat = cat.cloneNode(true);
         copycat.classList.add("grid");
 
         for(
